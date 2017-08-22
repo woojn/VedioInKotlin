@@ -1,7 +1,8 @@
-package cn.woojn.vedioinkotlin
+package cn.woojn.vedioinkotlin.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import cn.woojn.vedioinkotlin.R
 
 class MainActivity : AppCompatActivity() {
 
