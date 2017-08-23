@@ -2,7 +2,9 @@ package cn.woojn.vedioinkotlin.util
 
 import android.content.Context
 import android.util.DisplayMetrics
+import android.view.Gravity
 import android.view.WindowManager
+import android.widget.Toast
 
 /**
  * Created by wujun on 17-8-22.
@@ -34,4 +36,12 @@ fun getScreenHeight(context: Context): Int {
     val outMetrics = DisplayMetrics()
     wm.defaultDisplay.getMetrics(outMetrics)
     return outMetrics.heightPixels
+}
+
+fun Context.showToast(message: String): Toast {
+    var toast = Toast.makeText(this, message, Toast.LENGTH_SHORT)
+    toast.show()
+    toast.setGravity(Gravity.CENTER,0,0)
+    return toast
+
 }
